@@ -3,8 +3,9 @@ import os
 import time
 import requests
 from dotenv import load_dotenv
+from pathlib import Path
 
-load_dotenv()
+load_dotenv(Path(__file__).resolve().parent / ".env")
 
 TOKEN_URL = "https://mscp.tyrecheck.com/api/token"
 
