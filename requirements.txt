@@ -1,0 +1,6 @@
+sentry-sdk
+requests
+python-dotenv
+pandas
+openpyxl
+pathlib

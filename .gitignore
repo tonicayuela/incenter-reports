@@ -1,0 +1,21 @@
+# secrets
+.env
+
+# python
+venv/
+__pycache__/
+*.pyc
+
+# generated files
+downloads/
+downloads.zip
+merged_reports_*.xlsx
+
+# generated data
+companies_and_fleets.json
+inspections_raw.json
+match_fleet_company_ids.json
+service_fleet_company_pairs.json
+service_locations.json
+talleres_rodi.json
+rodi_transactions.json
