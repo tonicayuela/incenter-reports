@@ -5,7 +5,7 @@ import requests
 from dotenv import load_dotenv
 from pathlib import Path
 
-load_dotenv(Path(__file__).resolve().parent / ".env")
+load_dotenv(Path(__file__).resolve().parent / ".env", override=True)
 
 TOKEN_URL = "https://mscp.tyrecheck.com/api/token"
 
