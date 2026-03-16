@@ -1,4 +1,11 @@
 # main.py
+import pathlib
+
+from dotenv import load_dotenv
+from pathlib import Path
+
+load_dotenv(Path(__file__).resolve().parent / ".env")
+ 
 import requests
 import shutil
 from auth import login
@@ -13,8 +20,7 @@ from date_range import get_date_range
 from merge_excels import merge_excels
 from send_email import send_email
 import sentry_sdk
-import pathlib
- 
+
 sentry_sdk.init(
     dsn="https://15152c97f4f7bace02c57cf72f5ec551@o4504479594250240.ingest.us.sentry.io/4511026571444224",
     # Add data like request headers and IP for users,
