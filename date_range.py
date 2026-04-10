@@ -13,12 +13,8 @@ def get_date_range():
 
         today = datetime.today()
 
-        first_day_this_month = datetime(today.year, today.month, 1)
-
-        last_month = first_day_this_month - timedelta(days=1)
-
-        start = datetime(last_month.year, last_month.month, 1)
-        end = first_day_this_month
+        start = datetime(today.year, 1, 1)
+        end = today - timedelta(days=1)
 
     # CASO 2: solo una fecha
     elif len(args) == 1:
