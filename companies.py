@@ -30,7 +30,7 @@ def get_all(session, token_data, endpoint):
 
         url = API_BASE + endpoint
 
-        r = session.get(url, headers=headers, params=params, timeout=120)
+        r = session.get(url, headers=headers, params=params, timeout=300)
 
         if r.status_code != 200:
             raise Exception(f"{endpoint} error: {r.status_code} {r.text[:200]}")

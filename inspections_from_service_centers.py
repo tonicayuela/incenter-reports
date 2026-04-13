@@ -96,7 +96,7 @@ def fetch_inspections(session, token_data, start_date, end_date):
             "offset": 0
         }
 
-        r = session.get(API_URL, headers=headers, params=params, timeout=120)
+        r = session.get(API_URL, headers=headers, params=params, timeout=300)
 
         if r.status_code != 200:
             raise Exception(f"Error {r.status_code}: {r.text[:400]}")
