@@ -21,7 +21,7 @@ def send_email():
 
     msg["Subject"] = "[2024-004] - Projecte Incenter vs Neumacheck - Robot informes clients incenter"
     msg["From"] = "no-reply+incenter@rodi.es"
-    msg["To"] = "antonio.cayuela@rodi.es", "pau.casas@rodi.es", "ecodinach@rodi.es", "marc.sanchez@rodi.es", "maria.pedros@rodi.es", "flotasindustrial@rodi.es"
+    msg["To"] = "antonio.cayuela@rodi.es", "pau.casas@rodi.es", "ecodinach@rodi.es", "flotasindustrial@rodi.es"
 
     msg.set_content("[2024-004] - Projecte Incenter vs Neumacheck - Robot informes clients incenter")
 
