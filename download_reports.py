@@ -2,6 +2,7 @@ import json
 import os
 import re
 import requests
+import time
 
 REPORT_URL = "https://mscp.tyrecheck.com/api/api/Report"
 
@@ -107,10 +108,14 @@ def download_reports(session, token_data, start_date, end_date):
             print("✔ DESCARGADO:", filename)
 
             success += 1
+            
+            # Espera 10 segundos antes del siguiente report
+            time.sleep(10)
 
         except Exception as e:
 
             print("✖ ERROR:", str(e)[:200])
+            time.sleep(10)
             continue
 
     print("\nProceso terminado")
